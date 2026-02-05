@@ -15,17 +15,64 @@ gmailButton.onclick = () => {
 
 }
 
-const childBlock = document.querySelector('.child_block');
 const parentBlock = document.querySelector('.parent_block');
+const childBlock = document.querySelector('.child_block');
 
-let num = 0 
-const max = parentBlock.clientWidth - childBlock.offsetWidth
+let x = 0;
+let y = 0;
 
-function moveBloc(){
-    childBlock.style.left = num +'px'
-    if (num < max) {
-        num += 1; 
-        requestAnimationFrame(moveBloc);
+const maxX = parentBlock.clientWidth - childBlock.offsetWidth;
+const maxY = parentBlock.clientHeight - childBlock.offsetHeight;
+
+function move() {
+    childBlock.style.left = x + 'px';
+    childBlock.style.top = y + 'px';
+
+    if (x < maxX && y === 0) {
+        x += 2;                
+    } else if (x === maxX && y < maxY) {
+        y += 2;                
+    } else if (y === maxY && x > 0) {
+        x -= 2;                 
+    } else if (x === 0 && y > 0) {
+        y -= 2;               
     }
+
+    requestAnimationFrame(move);
 }
-moveBloc()
+
+move();
+
+// seconds
+const secondsBlock = document.getElementById('seconds');
+const startBtn = document.getElementById('start');
+const stopBtn = document.getElementById('stop');
+const resetBtn = document.getElementById('reset');
+
+let seconds = 0;
+let timerId = null;
+
+// START
+startBtn.addEventListener('click', () => {
+    // защита от повторного запуска
+    if (timerId !== null) return;
+
+    timerId = setInterval(() => {
+        seconds++;
+        secondsBlock.textContent = seconds;
+    }, 1000);
+});
+
+// STOP (пауза)
+stopBtn.addEventListener('click', () => {
+    clearInterval(timerId);
+    timerId = null;
+});
+
+// RESET
+resetBtn.addEventListener('click', () => {
+    clearInterval(timerId);
+    timerId = null;
+    seconds = 0;
+    secondsBlock.textContent = seconds;
+});

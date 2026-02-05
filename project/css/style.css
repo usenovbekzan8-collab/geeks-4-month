@@ -342,6 +342,7 @@
     transform-origin: top center;
     animation: animateliquid 5s linear infinite;
     animation-play-state: running;
+
 }
 
 @keyframes animateliquid {
