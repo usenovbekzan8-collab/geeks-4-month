@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#startBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#numbers {
+  margin-top: 20px;
+  font-size: 24px;
+}
+#numbers span {
+  margin: 0 5px;
+  color: #3498db;
+}
+
+#box {
+  width: 150px;
+  height: 150px;
+  background-color: lightgray;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#box.active {
+  background-color: #3498db;
+}/*# sourceMappingURL=style.css.map */
