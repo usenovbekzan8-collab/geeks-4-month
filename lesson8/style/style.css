@@ -20,6 +20,10 @@ body {
   margin: 0 auto;
 }
 
+.game {
+  color: white;
+}
+
 .header {
   height: 80px;
   background: #2c2d2f;
@@ -28,9 +32,9 @@ body {
   width: 100%;
   position: fixed;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* чёрный с 50% прозрачности */
+  background-color: rgba(0, 0, 0, 0.5);
   color: white;
-  z-index: 10; /* выше всех элементов */
+  z-index: 10;
   padding: 20px 0;
 }
 .header .inner_header {
@@ -100,10 +104,10 @@ li {
   justify-content: center;
   position: relative;
   background-image: url(../images/1.jpg);
-  background-size: cover; /* картинка масштабируется на весь блок */
-  background-position: center; /* центрируем картинку */
-  background-repeat: no-repeat; /* чтобы не повторялась */
-  min-height: 100vh; /* обязательно задаём высоту блока */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 .main_block h1 {
   text-align: center;
@@ -129,7 +133,6 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  /* Свечение вокруг надписи */
   filter: drop-shadow(0 0 1px white) drop-shadow(0 0 10px white) drop-shadow(0 0 50px white);
 }
 
@@ -268,7 +271,6 @@ li {
   padding: 60px 0;
   min-height: 500px;
   overflow: hidden;
-  /* блюр фон */
 }
 .block_video::before {
   content: "";
@@ -279,18 +281,12 @@ li {
   transform: scale(1.05);
   z-index: 0;
 }
-.block_video {
-  /* затемнение для читаемости */
-}
 .block_video::after {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
   z-index: 1;
-}
-.block_video {
-  /* весь контент поверх фона */
 }
 .block_video > * {
   position: relative;
@@ -315,14 +311,12 @@ li {
   border: none;
   border-radius: 16px;
   background: rgba(0, 0, 0, 0.3);
-  /* glass эффект */
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(8px);
   transition: transform 0.3s ease;
 }
 .block_video .inner_block_video iframe:hover {
   transform: scale(1.02);
-  /* лёгкое увеличение при наведении */
 }
 @media (max-width: 768px) {
   .block_video .inner_block_video iframe {
@@ -471,9 +465,6 @@ li {
   font-size: 16px;
   margin-bottom: 20px;
 }
-.modal .modal_content {
-  /* Крестик закрытия */
-}
 .modal .modal_content .modal_close {
   position: absolute;
   top: 10px;
@@ -485,9 +476,6 @@ li {
 }
 .modal .modal_content .modal_close:hover {
   color: #fff;
-}
-.modal .modal_content {
-  /* Поля формы */
 }
 .modal .modal_content form {
   display: flex;
@@ -510,9 +498,6 @@ li {
 .modal .modal_content form label .modal_input:focus {
   border-color: #fff;
   outline: none;
-}
-.modal .modal_content form {
-  /* Кнопка отправки */
 }
 .modal .modal_content form .btn {
   margin: 0 auto;

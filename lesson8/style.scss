@@ -19,6 +19,9 @@ body {
     margin: 0 auto;
 }
 
+.game {
+    color: white;
+}
 .header {
     height: 80px;
     background: #2c2d2f;
@@ -27,9 +30,9 @@ body {
     width: 100%;
     position: fixed;
     top: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* чёрный с 50% прозрачности */
+    background-color: rgba(0, 0, 0, 0.5); 
     color: white;
-    z-index: 10;           /* выше всех элементов */
+    z-index: 10;           
     padding: 20px 0;
     .inner_header {
         height: 100%;
@@ -104,10 +107,10 @@ li {
     justify-content: center;
     position: relative;
     background-image: url(../images/1.jpg);
-    background-size: cover;      /* картинка масштабируется на весь блок */
-    background-position: center; /* центрируем картинку */
-    background-repeat: no-repeat; /* чтобы не повторялась */
-    min-height: 100vh;           /* обязательно задаём высоту блока */
+    background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh;           
     h1 {
         text-align: center;
         font-size: 50px;
@@ -134,7 +137,7 @@ li {
     background-repeat: no-repeat;
     background-size: contain;
 
-    /* Свечение вокруг надписи */
+    
     filter: drop-shadow(0 0 1px white) drop-shadow(0 0 10px white) drop-shadow(0 0 50px white);
 }
 
@@ -288,7 +291,7 @@ li {
     min-height: 500px;
     overflow: hidden;
 
-    /* блюр фон */
+    
     &::before {
         content: "";
         position: absolute;
@@ -299,7 +302,7 @@ li {
         z-index: 0;
     }
 
-    /* затемнение для читаемости */
+    
     &::after {
         content: "";
         position: absolute;
@@ -308,7 +311,7 @@ li {
         z-index: 1;
     }
 
-    /* весь контент поверх фона */
+    
     >* {
         position: relative;
         z-index: 2;
@@ -334,14 +337,13 @@ li {
             border: none;
             border-radius: 16px;
             background: rgba(0, 0, 0, 0.3);
-            /* glass эффект */
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
             backdrop-filter: blur(8px);
             transition: transform 0.3s ease;
 
             &:hover {
                 transform: scale(1.02);
-                /* лёгкое увеличение при наведении */
+                
             }
         }
 
@@ -404,7 +406,7 @@ li {
             transition: color 0.3s ease;
 
             &:hover {
-                color: #f5d74a; // золотистый акцент GoT
+                color: #f5d74a; 
             }
         }
     }
@@ -449,7 +451,7 @@ li {
 .block_video,
 .footer {
     position: relative;
-    overflow: hidden; // обрезаем лишнее
+    overflow: hidden; 
 }
 
 .westeros_block::before,
@@ -460,7 +462,7 @@ li {
     inset: 0;
     background: url(../images/page_bg_raw.jpg) center / cover no-repeat;
     filter: blur(6px);
-    transform: scale(1); // вместо 1.05
+    transform: scale(1); 
     z-index: 0;
 }
 
@@ -472,7 +474,7 @@ li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.85); // тёмный полупрозрачный фон
+    background: rgba(0, 0, 0, 0.85); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -487,8 +489,8 @@ li {
     }
 
     .modal_content {
-        background: #1a1a1a; // тёмный фон модалки
-        border: 3px solid #c0a060; // золотая рамка
+        background: #1a1a1a; 
+        border: 3px solid #c0a060; 
         padding: 30px 20px;
         border-radius: 10px;
         max-width: 400px;
@@ -501,7 +503,7 @@ li {
         gap: 15px;
 
         h2 {
-            font-family: 'Cinzel', serif; // похожий на GoT шрифт
+            font-family: 'Cinzel', serif; 
             color: #c0a060;
             margin-bottom: 10px;
             font-size: 24px;
@@ -513,7 +515,7 @@ li {
             margin-bottom: 20px;
         }
 
-        /* Крестик закрытия */
+        
         .modal_close {
             position: absolute;
             top: 10px;
@@ -528,7 +530,7 @@ li {
             }
         }
 
-        /* Поля формы */
+        
         form {
             display: flex;
             flex-direction: column;
@@ -554,7 +556,7 @@ li {
                 }
             }
 
-            /* Кнопка отправки */
+            
             .btn {
                 margin: 0 auto;
                 padding: 10px 20px;

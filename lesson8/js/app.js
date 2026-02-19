@@ -64,5 +64,5 @@ prevBtn.addEventListener('click', () => {
 showSlide(index)
 startAuto()
 
-// dino
+
 

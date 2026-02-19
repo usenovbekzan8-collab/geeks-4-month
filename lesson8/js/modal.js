@@ -27,7 +27,7 @@ const closeModal = () => {
     document.body.style.overflow = '';
 };
 
-// --- События ---
+
 
 // Клик по кнопке "Click me!"
 openBtn.addEventListener('click', () => {

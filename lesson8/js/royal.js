@@ -27,7 +27,7 @@ function animateCarousel() {
     requestAnimationFrame(animateCarousel);
 }
 
-// запускаем анимацию
+
 animateCarousel();
 
 // dino 
@@ -60,39 +60,7 @@ setInterval(() => {
 }, 5000);
 
 
-// pers 
 
-
-
-// const API = "https://thronesapi.com/api/v2/Characters";
-// const container = document.getElementById("characters");
-
-// async function loadCharacters() {
-//     try {
-//         const res = await fetch(API);
-//         const characters = await res.json();
-
-//         characters.forEach(char => {
-//             const card = document.createElement("div");
-//             card.className = "character-card";
-
-//             card.innerHTML = `
-//         <img src="${char.imageUrl}" alt="${char.fullName}">
-//         <div class="character-content">
-//           <h3>${char.fullName}</h3>
-//           <p><strong>Титул:</strong> ${char.title || "—"}</p>
-//           <p><strong>Дом:</strong> ${char.family || "—"}</p>
-//         </div>
-//       `;
-
-//             container.appendChild(card);
-//         });
-//     } catch (e) {
-//         container.innerHTML = "<p>Ошибка загрузки персонажей</p>";
-//     }
-// }
-
-// loadCharacters();
 
 
 // mainCharacter 
@@ -131,5 +99,5 @@ async function loadCharacters() {
     }
 }
 
-// Запуск функции
+
 loadCharacters();
