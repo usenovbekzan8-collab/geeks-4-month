@@ -76,3 +76,37 @@ resetBtn.addEventListener('click', () => {
     seconds = 0;
     secondsBlock.textContent = seconds;
 });
+
+const charactersList = document.querySelector('.characters-list')
+
+const loadCharacters = () => {
+    const xhr = new XMLHttpRequest()
+
+    xhr.open('GET', '../data/characters.json')
+    xhr.responseType = 'json'
+
+    xhr.onload = () => {
+        xhr.response.forEach(character => {
+            const card = document.createElement('div')
+            card.classList.add('character-card')
+            card.style.color = '#fff' 
+
+            card.innerHTML = `
+                <div class="character-photo">
+                    <img src="${character.photo}" alt="${character.name}">
+                </div>
+                <h3>${character.name}</h3>
+                <span>Возраст: ${character.age}</span>
+                <p>${character.bio}</p>
+            `
+
+            charactersList.append(card)
+        })
+    }
+
+    xhr.send()
+}
+
+loadCharacters()
+
+
