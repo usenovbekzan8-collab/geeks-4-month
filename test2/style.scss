@@ -1,0 +1,131 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.app {
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__input {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+    }
+
+    &__btn {
+        padding: 10px 20px;
+        background: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+
+        &:hover {
+            background: #0056b3;
+        }
+    }
+
+    &__result {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+
+#colors {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 100px;
+}
+
+#colors button {
+    padding: 12px 24px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* цвета кнопок */
+#colors .red {
+    background-color: red;
+}
+
+#colors .green {
+    background-color: green;
+}
+
+#colors .blue {
+    background-color: blue;
+}
+
+#colors .yellow {
+    background-color: goldenrod;
+}
+
+#colors .purple {
+    background-color: purple;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+}
+
+
+.counter {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.iner_btn {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
