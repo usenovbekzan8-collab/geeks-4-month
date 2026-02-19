@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    
+<div class="wrapper">
+    
+    <div class="header">
+        <div class="container">
+            <div class="inner_header">
+                <a href="index.html">
+                    <div class="logotype">
+                        <h2>Game of Thrones</h2>
+                    </div>
+                </a>
+                <ul class="menu">
+                    <li class="menu_link">
+                        <a href="./page/royal.html">Королевства</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="">Артефакты</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="./page/pers.html">Персонажи</a>
+                    </li>
+                </ul>
+                <button class="btn" id="btn-get">Click me!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main_block">
+        <div class="container">
+            <div class="inner_main">
+                <a class="imgLogo">
+                    <!-- <img src="../images/logo.jpg" alt=""> -->
+                </a>
+                <hr>
+                <div class="westeros">
+                    <h1>Вестерос ждет вас</h1>
+                    <p>Эптческие битвы, интриги и драконы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="westeros_block">
+        <div class="container">
+            <div class="inner_westeros">
+                <h2 class="royal_westeros">Королевства Вестероса</h2>
+                <div class="slider">
+                    <button class="btn-slide" id="prev">&lt;</button>
+                    <div class="sliders ">
+                        <div class="slider_card">
+                            <img src="../images/sever.jpg" alt="sever">
+                            <h3 class="royal">Северное королевство</h3>
+                            <p>Север — крупнейшее и одно из самых холодных королевств Вестероса, расположенное на севере континента. Главная династия —
+                            Дом Старков, правители Винтерфелла.
+                            Север славится суровыми зимами, лесами и богатыми традициями чести и верности. Жители — суровые и стойкие, а честь и
+                            семья для них важнее всего.</p>
+                        </div>
+                    </div>
+                    
+
+                    <div class="sliders activ_slider  ">
+                        <div class="slider_card ">
+                            <img src="../images/RoyalHarbor.png" alt="sever">
+                            <h3>Королевская гавань</h3>
+                            <p>Королевская Гавань (англ. King’s Landing) — столица Семи королевств Вестероса. Она расположена на восточном побережье
+                            континента, у реки Черноводная и Черноводного залива. Город был основан королём Эйгоном I Таргариеном после его
+                            завоеваний. В Королевской Гавани находился Железный трон — символ власти над всей империей.</p>
+                        </div>
+                    </div>
+
+                    <div class="sliders ">
+                        <div class="slider_card">
+                            <img src="../images/dorne.jpg" alt="sever">
+                            <h3>Дорн</h3>
+                            <p>Дорн — южное королевство Вестероса, одно из Семи королевств. Оно расположено на крайнем юге континента,
+                                гранича с
+                                Королевской Гаванью и Штормовыми Землями на севере, а на юге омывается Ужасным морем.</p>
+                        </div>
+                    </div>
+
+                    <div class="sliders ">
+                        <div class="slider_card">
+                            <img src="../images/maxresdefault.jpg" alt="sever">
+                            <h3>Железные Острова</h3>
+                            <p>Железные Острова (Iron Islands) — архипелаг в Вестеросе, расположенный в узком проливе на западном побережье. Это
+                            суровая, каменистая территория, где господствует море.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn-slide next" id="next">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_video">
+        <div class="container">
+            <h3>Game of Thrones</h3>
+            <div class="inner_block_video">
+                <iframe width="80%" height="450" src="https://www.youtube.com/embed/SVz2WnbMmo0"
+                    title="Game of Thrones – Русский трейлер" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <h2>Westeros</h2>
+                </div>
+    
+                <div class="footer_links">
+                    <a href="#">Главная</a>
+                    <a href="#">Королевства</a>
+                    <a href="#">Персонажи</a>
+                    <a href="#">Видео</a>
+                    <a href="#">Контакты</a>
+                </div>
+    
+                <div class="footer_socials">
+                    <a href="#"><img src="../images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="../images/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="../images/iconmonstr-instagram-11.svg" alt="Instagram"></a>
+                </div>
+    
+                <p class="footer_copy">© 2026 Westeros. Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal_content">
+            <span class="modal_close">&times;</span>
+            <h2>Westeros</h2>
+            <p>Добро пожаловать в мир Game of Thrones!</p>
+    
+            <!-- Форма с полями -->
+            <form id="got-form">
+                <label>
+                    <input type="text" name="name" placeholder="Ваше имя" required class="modal_input">
+                </label>
+                <label>
+                    <input type="tel" name="phone" placeholder="Ваш номер телефона" required class="modal_input">
+                </label>
+                <label>
+                    <input type="email" name="email" placeholder="Ваш email" required class="modal_input">
+                </label>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

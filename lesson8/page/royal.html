@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/royal.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+
+   <div class="wrapper">
+
+    <div class="header">
+        <div class="container">
+            <div class="inner_header">
+                <a href="../index.html">
+                    <div class="logotype">
+                        <h2>Game of Thrones</h2>
+                    </div>
+                </a>
+                <ul class="menu">
+                    <li class="menu_link">
+                        <a href="./page/royal.html">Королевства</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="">Артефакты</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="./pers.html">Персонажи</a>
+                    </li>
+                </ul>
+                <button class="btn" id="btn-get">Click me!</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="container">
+            <h2 class="carousel-title">Главы домов Вестероса</h2>
+            <div class="innrt_hero">
+                
+                <div class="card">
+                    <img src="../images/Eddard_Stark.webp" alt="Эддард Старк">
+                    <h3>Дом Старков</h3>
+                    <p><strong>Глава:</strong> Эддард «Нед» Старк</p>
+                    <p><strong>Био:</strong> Честный и преданный, лорд Винтерфелла, хранитель Севера.</p>
+                </div>
+                
+                <div class="card">
+                    <img src="../images/lanister.webp" alt="Тайвин Ланнистер">
+                    <h3>Дом Ланнистеров</h3>
+                    <p><strong>Глава:</strong> Тайвин Ланнистер</p>
+                    <p><strong>Био:</strong> Хитрый и властный, лорд Кастерли-Рок, известен своим богатством.</p>
+                </div>
+                
+                <div class="card">
+                    <img src="../images/Robert_crop.webp" alt="Роберт Баратеон">
+                    <h3>Дом Баратеонов</h3>
+                    <p><strong>Глава:</strong> Роберт Баратеон</p>
+                    <p><strong>Био:</strong> Бывший король Семи Королевств, смелый воин с харизмой.</p>
+                </div>
+                
+                <div class="card">
+                    <img src="../images/targarian.webp" alt="Дейенерис Таргариен">
+                    <h3>Дом Таргариенов</h3>
+                    <p><strong>Глава:</strong> Дейенерис Таргариен</p>
+                    <p><strong>Био:</strong> Последняя наследница дома Таргариенов, стремится вернуть Железный трон.</p>
+                </div>
+                
+                <div class="card">
+                    <img src="../images/balon.jpg" alt="Балон Грейджой">
+                    <h3>Дом Грейджоев</h3>
+                    <p><strong>Глава:</strong> Балон Грейджой</p>
+                    <p><strong>Био:</strong> Лорд Железных Островов, свободолюбивый и жестокий моряк.</p>
+                </div>
+                
+                <div class="card">
+                    <img src="../images/Oberyn-Martell-house-martell_s3.webp" alt="Оберин Мартелл">
+                    <h3>Дом Мартеллов</h3>
+                    <p><strong>Глава:</strong> Оберин Мартелл</p>
+                    <p><strong>Био:</strong> Хитрый и решительный, правитель южного королевства Дорн.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="map">
+        <div class="container">
+            <div class="inner_map">
+                <img src="../images/house-of-the-dragon-map-of-westeros-cover.jpg" alt="">
+            </div>
+            <div class="dino">
+                <img src="../images/dino2.gif" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="mainCharacter">
+        <div class="container">
+            <div class="inner_mainCaracter">
+                <h2>Game of Thrones — Главные Герои</h2>
+                
+                <div id="characters"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_logo">
+                    <h2>Westeros</h2>
+                </div>
+    
+                <div class="footer_links">
+                    <a href="#">Главная</a>
+                    <a href="#">Королевства</a>
+                    <a href="#">Персонажи</a>
+                    <a href="#">Видео</a>
+                    <a href="#">Контакты</a>
+                </div>
+    
+                <div class="footer_socials">
+                    <a href="#"><img src="../images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="../images/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="../images/iconmonstr-instagram-11.svg" alt="Instagram"></a>
+                </div>
+    
+                <p class="footer_copy">© 2026 Westeros. Все права защищены.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="modal" class="modal">
+        <div class="modal_content">
+            <span class="modal_close">&times;</span>
+            <h2>Westeros</h2>
+            <p>Добро пожаловать в мир Game of Thrones!</p>
+    
+            <!-- Форма с полями -->
+            <form id="got-form">
+                <label>
+                    <input type="text" name="name" placeholder="Ваше имя" required class="modal_input">
+                </label>
+                <label>
+                    <input type="tel" name="phone" placeholder="Ваш номер телефона" required class="modal_input">
+                </label>
+                <label>
+                    <input type="email" name="email" placeholder="Ваш email" required class="modal_input">
+                </label>
+                <button type="submit" class="btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+   </div>
+
+
+    <script src="../js/modal.js"></script>
+    <script src="../js/royal.js"></script>
+</body>
+</html>

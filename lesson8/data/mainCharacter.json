@@ -1,0 +1,66 @@
+[
+    {
+        "fullName": "Jon Snow",
+        "age": 25,
+        "bio": "Сын Неда Старка (воспитанный как бастард), Lord Commander Ночного Дозора, истинный наследник трона.",
+        "house": "Stark",
+        "imageUrl": "../characterImg/Jon_Snow_profile.webp"
+    },
+    {
+        "fullName": "Daenerys Targaryen",
+        "age": 24,
+        "bio": "Последняя из рода Таргариенов, Освободительница рабов, Мать Драконов, претендент на Железный Трон.",
+        "house": "Targaryen",
+        "imageUrl": "../characterImg/DaenerysTargaryen.jpg"
+    },
+    {
+        "fullName": "Tyrion Lannister",
+        "age": 32,
+        "bio": "Умный и саркастичный гностик, брат Серсеи и Джейме, стратег и Советник королей.",
+        "house": "Lannister",
+        "imageUrl": "../characterImg/TyrionLannister.webp"
+    },
+    {
+        "fullName": "Arya Stark",
+        "age": 18,
+        "bio": "Младшая дочь семьи Старков, бесстрашная воительница и ассасин, путешествовала по Вестеросу и за его пределами.",
+        "house": "Stark",
+        "imageUrl": "../characterImg/AryaStark.webp"
+    },
+    {
+        "fullName": "Sansa Stark",
+        "age": 20,
+        "bio": "Старшая дочь семьи Старков, стала главным лидером Севера, известна хитростью и выдержкой.",
+        "house": "Stark",
+        "imageUrl": "../characterImg/SasaStark.webp"
+    },
+    {
+        "fullName": "Jaime Lannister",
+        "age": 42,
+        "bio": "Брат Серсеи, известен как Убийца Короля, эволюционировал от цинизма к благородству.",
+        "house": "Lannister",
+        "imageUrl": "../characterImg/JaimeLannister.webp"
+    },
+    {
+        "fullName": "Bran Stark",
+        "age": 17,
+        "bio": "Младший сын Старков, стал Трёхглазым Вороном и знал прошлое и будущее.",
+        "house": "Stark",
+        "imageUrl": "../characterImg/BranStark.jpg"
+    },
+    {
+        "fullName": "Theon Greyjoy",
+        "age": 25,
+        "bio": "Воспитанный Старками, затем изменник, попытался искупить свои грехи, спасая Сансу.",
+        "house": "Greyjoy",
+        "imageUrl": "../characterImg/TheonGreyjoy.jpg"
+    },
+    {
+        "fullName": "Sandor Clegane (The Hound)",
+        "age": 35,
+        "bio": "Жестокий воин с обугленным лицом, спасал Арью, в конце пути искал внутреннего мира.",
+        "house": "Clegane",
+        "imageUrl": "../characterImg/SandorClegane.webp"
+    }
+   
+]

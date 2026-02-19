@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/pers.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+            <div class="container">
+                <div class="inner_header">
+                    <a href="index.html">
+                        <div class="logotype">
+                            <h2>Game of Thrones</h2>
+                        </div>
+                    </a>
+                    <ul class="menu">
+                        <li class="menu_link">
+                            <a href="./page/royal.html">Королевства</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="">Артефакты</a>
+                        </li>
+                        <li class="menu_link">
+                            <a href="../lesson8/page/pers.html">Персонажи</a>
+                        </li>
+                    </ul>
+                    <button class="btn" id="btn-get">Click me!</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="pers">
+            <div class="container">
+                <div class="inner_pers">
+                    <h3>Персонажи «Игры престолов»</h3>
+        
+                    <div id="characters">
+                        <!-- Сюда JS вставит персонажей -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container">
+                <div class="footer_inner">
+                    <div class="footer_logo">
+                        <h2>Westeros</h2>
+                    </div>
+        
+                    <div class="footer_links">
+                        <a href="#">Главная</a>
+                        <a href="#">Королевства</a>
+                        <a href="#">Персонажи</a>
+                        <a href="#">Видео</a>
+                        <a href="#">Контакты</a>
+                    </div>
+        
+                    <div class="footer_socials">
+                        <a href="#"><img src="../images/facebook.svg" alt="Facebook"></a>
+                        <a href="#"><img src="../images/twitter.svg" alt="Twitter"></a>
+                        <a href="#"><img src="../images/iconmonstr-instagram-11.svg" alt="Instagram"></a>
+                    </div>
+        
+                    <p class="footer_copy">© 2026 Westeros. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="modal" class="modal">
+            <div class="modal_content">
+                <span class="modal_close">&times;</span>
+                <h2>Westeros</h2>
+                <p>Добро пожаловать в мир Game of Thrones!</p>
+        
+                <!-- Форма с полями -->
+                <form id="got-form">
+                    <label>
+                        <input type="text" name="name" placeholder="Ваше имя" required class="modal_input">
+                    </label>
+                    <label>
+                        <input type="tel" name="phone" placeholder="Ваш номер телефона" required class="modal_input">
+                    </label>
+                    <label>
+                        <input type="email" name="email" placeholder="Ваш email" required class="modal_input">
+                    </label>
+                    <button type="submit" class="btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <script src="../js/modal.js"></script>
+    <script src="../js/pers.js"></script>
+</body>
+</html>
